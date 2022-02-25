@@ -1,0 +1,35 @@
+display_information:
+  name: (What's the Status)
+  description: Effortless (Slack) presence management for a healthy work-life balance
+  background_color: "#2c2d30"
+  long_description: "`(What's the Status)` aims to support a healthy work-life balance, by tackling your digital presence (Slack, MS Teams, Zoom, Google, GitHub, LinkedIn, email, phone, ... anything!)\r
+
+    \r
+
+    It starts with Slack ... no one knows what's next.\r
+
+    \r
+
+    Effortless[1]: Make It Easier to Do What Matters Most"
+features:
+  bot_user:
+    display_name: (What's the Status)
+    always_online: false
+oauth_config:
+  scopes:
+    user:
+      - dnd:read
+      - users.profile:read
+      - users.profile:write
+      - users:read
+      - users:write
+      - dnd:write
+    bot:
+      - users.profile:read
+      - users:read
+      - users:write
+      - dnd:read
+settings:
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
